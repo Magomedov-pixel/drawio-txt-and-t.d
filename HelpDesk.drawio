@@ -1,0 +1,154 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36" version="29.4.0">
+  <diagram name="Страница-1" id="P8jjTtW3HW6ztejzW75D">
+    <mxGraphModel dx="2084" dy="1332" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="Rj1UHAzZpfBwUlK7xxZg-1" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;h3 align=&quot;center&quot; style=&quot;margin: 0cm; line-height: 150%;&quot;&gt;&lt;strong&gt;&lt;span style=&quot;font-family:&amp;quot;Liberation Sans&amp;quot;,sans-serif;mso-bidi-font-family:&amp;quot;Droid Sans&amp;quot;;&lt;br/&gt;color:#0F1115&quot;&gt;Техническое задание&lt;/span&gt;&lt;/strong&gt;&lt;/h3&gt;&lt;br/&gt;&lt;br/&gt;&lt;p class=&quot;MsoBodyText&quot; align=&quot;center&quot; style=&quot;margin-bottom: 0cm; line-height: 150%;&quot;&gt;&lt;strong&gt;&lt;span style=&quot;font-size:14.0pt;line-height:150%;&lt;br/&gt;font-family:&amp;quot;Liberation Sans&amp;quot;,sans-serif;mso-bidi-font-family:&amp;quot;Droid Sans&amp;quot;;&lt;br/&gt;color:#0F1115&quot;&gt;на разработку Информационной системы службы технической&lt;br/&gt;поддержки (ИС ТП)&lt;/span&gt;&lt;/strong&gt;&lt;strong&gt;&lt;span style=&quot;font-size:14.0pt;&lt;br/&gt;line-height:150%;font-family:&amp;quot;Liberation Sans&amp;quot;,sans-serif;mso-bidi-font-family:&lt;br/&gt;&amp;quot;Droid Sans&amp;quot;;color:#0F1115;font-weight:normal;mso-bidi-font-weight:bold&quot;&gt; &lt;/span&gt;&lt;/strong&gt;&lt;strong&gt;&lt;span style=&quot;font-size:14.0pt;line-height:150%;font-family:&amp;quot;Liberation Sans&amp;quot;,sans-serif;&lt;br/&gt;mso-bidi-font-family:&amp;quot;Droid Sans&amp;quot;;color:#0F1115&quot;&gt;для Отдела информатизации&lt;br/&gt;ГБПОУ ЯНАО «Ямальский многопрофильный колледж»&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;" vertex="1">
+          <mxGeometry height="170" width="810" x="240" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="Rj1UHAzZpfBwUlK7xxZg-2" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" value="заказчик&amp;nbsp;" vertex="1">
+          <mxGeometry height="60" width="30" x="650" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="Rj1UHAzZpfBwUlK7xxZg-3" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;p class=&quot;MsoBodyText&quot; style=&quot;margin-bottom:0cm;text-align:justify;text-indent:&amp;lt;br/&amp;gt;35.45pt;line-height:150%&quot;&gt;&lt;strong&gt;&lt;span style=&quot;font-size:14.0pt;line-height:&amp;lt;br/&amp;gt;150%;font-family:&amp;quot;Liberation Sans&amp;quot;,sans-serif;mso-bidi-font-family:&amp;quot;Droid Sans&amp;quot;;&amp;lt;br/&amp;gt;color:#0F1115&quot;&gt;Внутренние пользователи (исполнители):&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;&lt;p class=&quot;MsoBodyText&quot; style=&quot;margin-bottom:0cm;text-align:justify;text-indent:&amp;lt;br/&amp;gt;70.85pt;line-height:150%&quot;&gt;&lt;span style=&quot;font-size: 14pt; line-height: 150%; color: rgb(15, 17, 21);&quot;&gt;Руководитель отдела&lt;br&gt;информатизации (1 чел.)&lt;/span&gt;&lt;/p&gt;&lt;span style=&quot;font-size:14.0pt;font-family:&amp;quot;Liberation Sans&amp;quot;,sans-serif;&amp;lt;br/&amp;gt;mso-fareast-font-family:&amp;quot;DejaVu Sans&amp;quot;;mso-bidi-font-family:&amp;quot;Droid Sans&amp;quot;;&amp;lt;br/&amp;gt;color:#0F1115;mso-ansi-language:RU;mso-fareast-language:ZH-CN;mso-bidi-language:&amp;lt;br/&amp;gt;HI&quot;&gt;Сотрудники отдела информатизации (3 чел.)&lt;/span&gt;&lt;div&gt;&lt;strong style=&quot;text-align: justify; text-indent: 35.45pt; background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;span style=&quot;font-size:14.0pt;line-height:&lt;br/&gt;150%;font-family:&amp;quot;Liberation Sans&amp;quot;,sans-serif;mso-bidi-font-family:&amp;quot;Droid Sans&amp;quot;;&lt;br/&gt;color:#0F1115&quot;&gt;Внешние пользователи (клиенты):&lt;/span&gt;&lt;/strong&gt;&lt;span style=&quot;background-color: transparent; color: rgb(15, 17, 21); font-family: &amp;quot;Liberation Sans&amp;quot;, sans-serif; font-size: 14pt; text-align: justify; text-indent: 70.85pt;&quot;&gt;Сотрудники и&lt;br/&gt;преподаватели колледжа.&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="210" width="470" x="1006" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Rj1UHAzZpfBwUlK7xxZg-38" edge="1" parent="1" source="Rj1UHAzZpfBwUlK7xxZg-4" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0;entryDx=0;entryDy=0;fillColor=#d80073;strokeColor=#A50040;" target="Rj1UHAzZpfBwUlK7xxZg-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Rj1UHAzZpfBwUlK7xxZg-4" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fillColor=#d80073;fontColor=#ffffff;strokeColor=#A50040;" value="&lt;font style=&quot;color: rgb(51, 0, 26);&quot;&gt;Администратор&lt;/font&gt;" vertex="1">
+          <mxGeometry height="60" width="33" x="797" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="Rj1UHAzZpfBwUlK7xxZg-33" edge="1" parent="1" source="Rj1UHAzZpfBwUlK7xxZg-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fillColor=#0050ef;strokeColor=#001DBC;" target="Rj1UHAzZpfBwUlK7xxZg-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Rj1UHAzZpfBwUlK7xxZg-5" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fillColor=#0050ef;fontColor=#ffffff;strokeColor=#001DBC;" value="&lt;font style=&quot;color: rgb(51, 0, 26);&quot;&gt;технический специалист&lt;/font&gt;" vertex="1">
+          <mxGeometry height="60" width="30" x="640" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="Rj1UHAzZpfBwUlK7xxZg-23" edge="1" parent="1" source="Rj1UHAzZpfBwUlK7xxZg-6" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.212;entryY=0.054;entryDx=0;entryDy=0;entryPerimeter=0;fillColor=#60a917;strokeColor=#2D7600;" target="Rj1UHAzZpfBwUlK7xxZg-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Rj1UHAzZpfBwUlK7xxZg-6" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fillColor=#60a917;strokeColor=#2D7600;fontColor=#ffffff;" value="&lt;font style=&quot;color: rgb(51, 0, 26);&quot;&gt;пользователь&lt;/font&gt;" vertex="1">
+          <mxGeometry height="60" width="30" x="470" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="Rj1UHAzZpfBwUlK7xxZg-24" edge="1" parent="1" source="Rj1UHAzZpfBwUlK7xxZg-7" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fillColor=#60a917;strokeColor=#2D7600;" target="Rj1UHAzZpfBwUlK7xxZg-22">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Rj1UHAzZpfBwUlK7xxZg-25" edge="1" parent="1" source="Rj1UHAzZpfBwUlK7xxZg-7" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;fillColor=#60a917;strokeColor=#2D7600;" target="Rj1UHAzZpfBwUlK7xxZg-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Rj1UHAzZpfBwUlK7xxZg-26" edge="1" parent="1" source="Rj1UHAzZpfBwUlK7xxZg-7" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;fillColor=#60a917;strokeColor=#2D7600;" target="Rj1UHAzZpfBwUlK7xxZg-21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Rj1UHAzZpfBwUlK7xxZg-34" edge="1" parent="1" source="Rj1UHAzZpfBwUlK7xxZg-7" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fillColor=#0050ef;strokeColor=#001DBC;" target="Rj1UHAzZpfBwUlK7xxZg-29">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Rj1UHAzZpfBwUlK7xxZg-35" edge="1" parent="1" source="Rj1UHAzZpfBwUlK7xxZg-7" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fillColor=#0050ef;strokeColor=#001DBC;" target="Rj1UHAzZpfBwUlK7xxZg-30">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Rj1UHAzZpfBwUlK7xxZg-36" edge="1" parent="1" source="Rj1UHAzZpfBwUlK7xxZg-7" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fillColor=#0050ef;strokeColor=#001DBC;" target="Rj1UHAzZpfBwUlK7xxZg-31">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Rj1UHAzZpfBwUlK7xxZg-37" edge="1" parent="1" source="Rj1UHAzZpfBwUlK7xxZg-7" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fillColor=#0050ef;strokeColor=#001DBC;" target="Rj1UHAzZpfBwUlK7xxZg-32">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Rj1UHAzZpfBwUlK7xxZg-45" edge="1" parent="1" source="Rj1UHAzZpfBwUlK7xxZg-7" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fillColor=#d80073;strokeColor=#A50040;" target="Rj1UHAzZpfBwUlK7xxZg-43">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Rj1UHAzZpfBwUlK7xxZg-46" edge="1" parent="1" source="Rj1UHAzZpfBwUlK7xxZg-7" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fillColor=#d80073;strokeColor=#A50040;" target="Rj1UHAzZpfBwUlK7xxZg-41">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Rj1UHAzZpfBwUlK7xxZg-47" edge="1" parent="1" source="Rj1UHAzZpfBwUlK7xxZg-7" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fillColor=#d80073;strokeColor=#A50040;" target="Rj1UHAzZpfBwUlK7xxZg-40">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Rj1UHAzZpfBwUlK7xxZg-48" edge="1" parent="1" source="Rj1UHAzZpfBwUlK7xxZg-7" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.932;exitY=0.254;exitDx=0;exitDy=0;exitPerimeter=0;fillColor=#d80073;strokeColor=#A50040;" target="Rj1UHAzZpfBwUlK7xxZg-39">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Rj1UHAzZpfBwUlK7xxZg-7" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="вход в систему" vertex="1">
+          <mxGeometry height="80" width="270" x="520" y="505" as="geometry" />
+        </mxCell>
+        <mxCell id="Rj1UHAzZpfBwUlK7xxZg-57" edge="1" parent="1" source="Rj1UHAzZpfBwUlK7xxZg-19" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;fillColor=#60a917;strokeColor=#2D7600;" target="Rj1UHAzZpfBwUlK7xxZg-56">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Rj1UHAzZpfBwUlK7xxZg-19" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#60a917;fontColor=#ffffff;strokeColor=#2D7600;" value="&lt;i&gt;&lt;span style=&quot;font-size: 12pt; line-height: 107%;&quot;&gt;&lt;font style=&quot;color: rgb(255, 255, 255);&quot;&gt;&amp;nbsp;Просмотреть статус своих заявок&lt;/font&gt;&lt;/span&gt;&lt;/i&gt;" vertex="1">
+          <mxGeometry height="80" width="120" x="294" y="544.5" as="geometry" />
+        </mxCell>
+        <mxCell id="Rj1UHAzZpfBwUlK7xxZg-21" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#60a917;fontColor=#ffffff;strokeColor=#2D7600;" value="&lt;p class=&quot;MsoNormal&quot; style=&quot;margin-top: 0cm; margin-right: 0cm; margin-bottom: 0cm; text-indent: 35.45pt; line-height: 150%; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;&quot;&gt;&lt;i style=&quot;&quot;&gt;&lt;span style=&quot;font-size: 12pt; line-height: 150%; font-family: &amp;quot;Liberation Sans&amp;quot;, sans-serif;&quot;&gt;&lt;font style=&quot;color: rgb(255, 255, 255);&quot;&gt;Поиск по Базе знаний.&lt;/font&gt;&lt;/span&gt;&lt;/i&gt;&lt;/p&gt;" vertex="1">
+          <mxGeometry height="80" width="230" x="240" y="660" as="geometry" />
+        </mxCell>
+        <mxCell id="Rj1UHAzZpfBwUlK7xxZg-22" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#60a917;fontColor=#ffffff;strokeColor=#2D7600;" value="Создать заявку" vertex="1">
+          <mxGeometry height="80" width="120" x="300" y="425" as="geometry" />
+        </mxCell>
+        <mxCell id="Rj1UHAzZpfBwUlK7xxZg-29" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#0050ef;fontColor=#ffffff;strokeColor=#001DBC;" value="&lt;i&gt;&lt;span style=&quot;font-size: 12pt; line-height: 107%;&quot;&gt;&lt;font style=&quot;color: rgb(255, 255, 255);&quot;&gt;&amp;nbsp;Просмотреть назначенные заявки&lt;/font&gt;&lt;/span&gt;&lt;/i&gt;" vertex="1">
+          <mxGeometry height="80" width="120" x="400" y="780" as="geometry" />
+        </mxCell>
+        <mxCell id="Rj1UHAzZpfBwUlK7xxZg-52" edge="1" parent="1" source="Rj1UHAzZpfBwUlK7xxZg-30" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fillColor=#0050ef;strokeColor=#001DBC;" target="Rj1UHAzZpfBwUlK7xxZg-49">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Rj1UHAzZpfBwUlK7xxZg-53" edge="1" parent="1" source="Rj1UHAzZpfBwUlK7xxZg-30" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fillColor=#0050ef;strokeColor=#001DBC;" target="Rj1UHAzZpfBwUlK7xxZg-50">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Rj1UHAzZpfBwUlK7xxZg-54" edge="1" parent="1" source="Rj1UHAzZpfBwUlK7xxZg-30" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fillColor=#0050ef;strokeColor=#001DBC;" target="Rj1UHAzZpfBwUlK7xxZg-51">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Rj1UHAzZpfBwUlK7xxZg-30" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#0050ef;fontColor=#ffffff;strokeColor=#001DBC;" value="&lt;i&gt;&lt;span style=&quot;font-size: 12pt; line-height: 107%;&quot;&gt;&lt;font style=&quot;color: rgb(255, 255, 255);&quot;&gt;Изменить статус заявки&lt;/font&gt;&lt;/span&gt;&lt;/i&gt;" vertex="1">
+          <mxGeometry height="80" width="120" x="540" y="730" as="geometry" />
+        </mxCell>
+        <mxCell id="Rj1UHAzZpfBwUlK7xxZg-31" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#0050ef;fontColor=#ffffff;strokeColor=#001DBC;" value="&lt;i&gt;&lt;span style=&quot;font-size: 12pt; line-height: 107%;&quot;&gt;&lt;font style=&quot;color: rgb(255, 255, 255);&quot;&gt;Добавить комментарий&lt;/font&gt;&lt;/span&gt;&lt;/i&gt;" vertex="1">
+          <mxGeometry height="80" width="120" x="680" y="800" as="geometry" />
+        </mxCell>
+        <mxCell id="Rj1UHAzZpfBwUlK7xxZg-32" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#0050ef;fontColor=#ffffff;strokeColor=#001DBC;" value="&lt;i&gt;&lt;span style=&quot;font-size: 12pt; line-height: 107%;&quot;&gt;&lt;font style=&quot;color: rgb(255, 255, 255);&quot;&gt;Создать статью в Базе знаний&lt;/font&gt;&lt;/span&gt;&lt;/i&gt;" vertex="1">
+          <mxGeometry height="80" width="120" x="780" y="710" as="geometry" />
+        </mxCell>
+        <mxCell id="Rj1UHAzZpfBwUlK7xxZg-39" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d80073;fontColor=#ffffff;strokeColor=#A50040;" value="&lt;i&gt;&lt;span style=&quot;font-size: 12pt; line-height: 107%;&quot;&gt;&lt;font style=&quot;color: rgb(255, 255, 255);&quot;&gt;Управление пользователями&lt;/font&gt;&lt;/span&gt;&lt;/i&gt;" vertex="1">
+          <mxGeometry height="80" width="120" x="900" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="Rj1UHAzZpfBwUlK7xxZg-40" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d80073;fontColor=#ffffff;strokeColor=#A50040;" value="&lt;i&gt;&lt;span style=&quot;font-size: 12pt; line-height: 107%;&quot;&gt;&lt;font style=&quot;color: rgb(255, 255, 255);&quot;&gt;Назначение заявок&lt;/font&gt;&lt;/span&gt;&lt;/i&gt;" vertex="1">
+          <mxGeometry height="80" width="120" x="850" y="480" as="geometry" />
+        </mxCell>
+        <mxCell id="Rj1UHAzZpfBwUlK7xxZg-63" edge="1" parent="1" source="Rj1UHAzZpfBwUlK7xxZg-41" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fillColor=#d80073;strokeColor=#A50040;" target="Rj1UHAzZpfBwUlK7xxZg-60">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Rj1UHAzZpfBwUlK7xxZg-64" edge="1" parent="1" source="Rj1UHAzZpfBwUlK7xxZg-41" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fillColor=#d80073;strokeColor=#A50040;" target="Rj1UHAzZpfBwUlK7xxZg-61">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Rj1UHAzZpfBwUlK7xxZg-65" edge="1" parent="1" source="Rj1UHAzZpfBwUlK7xxZg-41" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fillColor=#d80073;strokeColor=#A50040;" target="Rj1UHAzZpfBwUlK7xxZg-62">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Rj1UHAzZpfBwUlK7xxZg-41" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d80073;fontColor=#ffffff;strokeColor=#A50040;" value="&lt;i&gt;&lt;span style=&quot;font-size: 12pt; line-height: 107%;&quot;&gt;&lt;font style=&quot;color: rgb(255, 255, 255);&quot;&gt;Просмотр Дашборда&lt;/font&gt;&lt;/span&gt;&lt;/i&gt;" vertex="1">
+          <mxGeometry height="80" width="120" x="980" y="545" as="geometry" />
+        </mxCell>
+        <mxCell id="Rj1UHAzZpfBwUlK7xxZg-43" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d80073;fontColor=#ffffff;strokeColor=#A50040;" value="&lt;i&gt;&lt;span style=&quot;font-size: 12pt; line-height: 107%;&quot;&gt;&lt;font style=&quot;color: rgb(255, 255, 255);&quot;&gt;Формирование отчетов&lt;/font&gt;&lt;/span&gt;&lt;/i&gt;" vertex="1">
+          <mxGeometry height="80" width="120" x="920" y="625" as="geometry" />
+        </mxCell>
+        <mxCell id="Rj1UHAzZpfBwUlK7xxZg-49" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#0050ef;fontColor=#ffffff;strokeColor=#001DBC;" value="новая" vertex="1">
+          <mxGeometry height="80" width="120" x="390" y="1000" as="geometry" />
+        </mxCell>
+        <mxCell id="Rj1UHAzZpfBwUlK7xxZg-50" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#0050ef;fontColor=#ffffff;strokeColor=#001DBC;" value="&amp;nbsp;в работе" vertex="1">
+          <mxGeometry height="80" width="120" x="520" y="1000" as="geometry" />
+        </mxCell>
+        <mxCell id="Rj1UHAzZpfBwUlK7xxZg-51" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#0050ef;fontColor=#ffffff;strokeColor=#001DBC;" value="выполненно" vertex="1">
+          <mxGeometry height="80" width="120" x="640" y="1000" as="geometry" />
+        </mxCell>
+        <mxCell id="Rj1UHAzZpfBwUlK7xxZg-56" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#60a917;fontColor=#ffffff;strokeColor=#2D7600;" value="Push уведомление о смене статуса" vertex="1">
+          <mxGeometry height="80" width="120" x="80" y="550" as="geometry" />
+        </mxCell>
+        <mxCell id="Rj1UHAzZpfBwUlK7xxZg-58" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#60a917;fontColor=#ffffff;strokeColor=#2D7600;" value="&lt;span style=&quot;font-size:14.0pt;font-family:&amp;quot;Liberation Sans&amp;quot;,sans-serif;&lt;br/&gt;mso-fareast-font-family:&amp;quot;DejaVu Sans&amp;quot;;mso-bidi-font-family:&amp;quot;Droid Sans&amp;quot;;&lt;br/&gt;color:#0F1115;mso-ansi-language:RU;mso-fareast-language:ZH-CN;mso-bidi-language:&lt;br/&gt;HI&quot;&gt;«Тема», «Описание проблемы», «Категория» (e.g., ПО, Железо, Сеть, 1С),&lt;br/&gt;«Срочность»&lt;/span&gt;" vertex="1">
+          <mxGeometry height="140" width="360" x="20" y="250" as="geometry" />
+        </mxCell>
+        <mxCell id="Rj1UHAzZpfBwUlK7xxZg-59" edge="1" parent="1" source="Rj1UHAzZpfBwUlK7xxZg-22" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.443;entryY=1.011;entryDx=0;entryDy=0;entryPerimeter=0;fillColor=#60a917;strokeColor=#2D7600;" target="Rj1UHAzZpfBwUlK7xxZg-58">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Rj1UHAzZpfBwUlK7xxZg-60" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d80073;fontColor=#ffffff;strokeColor=#A50040;" value="&lt;span style=&quot;font-size:14.0pt;font-family:&amp;quot;Liberation Sans&amp;quot;,sans-serif;&lt;br/&gt;mso-fareast-font-family:&amp;quot;DejaVu Sans&amp;quot;;mso-bidi-font-family:&amp;quot;Droid Sans&amp;quot;;&lt;br/&gt;color:#0F1115;mso-ansi-language:RU;mso-fareast-language:ZH-CN;mso-bidi-language:&lt;br/&gt;HI&quot;&gt;Количество заявок за период (всего, новых, решенных)&lt;/span&gt;" vertex="1">
+          <mxGeometry height="100" width="239" x="1181" y="430" as="geometry" />
+        </mxCell>
+        <mxCell id="Rj1UHAzZpfBwUlK7xxZg-61" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d80073;fontColor=#ffffff;strokeColor=#A50040;" value="&lt;br&gt;&lt;span style=&quot;font-size:14.0pt;font-family:&amp;quot;Liberation Sans&amp;quot;,sans-serif;&amp;lt;br/&amp;gt;mso-fareast-font-family:&amp;quot;DejaVu Sans&amp;quot;;mso-bidi-font-family:&amp;quot;Droid Sans&amp;quot;;&amp;lt;br/&amp;gt;color:#0F1115;mso-ansi-language:RU;mso-fareast-language:ZH-CN;mso-bidi-language:&amp;lt;br/&amp;gt;HI&quot;&gt;Среднее время решения заявки.&lt;/span&gt;" vertex="1">
+          <mxGeometry height="70" width="250" x="1181" y="560" as="geometry" />
+        </mxCell>
+        <mxCell id="Rj1UHAzZpfBwUlK7xxZg-62" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d80073;fontColor=#ffffff;strokeColor=#A50040;" value="&lt;p class=&quot;MsoBodyText&quot; style=&quot;margin-bottom:0cm;text-align:justify;text-indent:&amp;lt;br/&amp;gt;35.45pt;line-height:150%&quot;&gt;&lt;span style=&quot;font-size: 14pt; line-height: 150%;&quot;&gt;&lt;font style=&quot;color: rgb(255, 255, 255);&quot;&gt;Загрузка специалистов&lt;br&gt;(количество открытых заявок на каждого).&lt;/font&gt;&lt;/span&gt;&lt;/p&gt;" vertex="1">
+          <mxGeometry height="100" width="400" x="1120" y="660" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
