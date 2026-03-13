@@ -1,0 +1,74 @@
+1
+SELECT * FROM employees;
+2
+SELECT `first_name`, `department` FROM employees;
+3
+SELECT DISTINCT `department` FROM employees;
+4
+SELECT `last_name` AS "Имя клиента" FROM employees;
+5
+SELECT * FROM employees ORDER BY `salary` DESC;
+6
+SELECT * FROM employees LIMIT 10;
+
+ЗАДАЧИ
+БЛОК 1
+1)SELECT * FROM employees;
+2)SELECT `first_name`, `last_name` FROM employees;
+3)SELECT `last_name`, `department` FROM employees WHERE `department` ='Sales';
+4SELECT `last_name`, `salary` FROM employees WHERE `salary` > 50000;
+5)SELECT DISTINCT `city` FROM employees;
+6)SELECT `first_name`, `age` FROM employees WHERE `age` > 30;
+7)SELECT `first_name`,`department`,`salary` FROM employees WHERE `department` = 'IT' AND `salary` < 40000;
+8)SELECT `first_name`,`hire_date` FROM employees WHERE`hire_date` > 2023-01-01;
+9)SELECT `first_name`,`salary` FROM employees WHERE salary BETWEEN 30000 AND 60000;
+10)SELECT `first_name`,`city` FROM employees WHERE `city` = 'Moscow' OR 'London';
+БЛОК 2
+11)SELECT `first_name` FROM employees WHERE `first_name` LIKE 'A%';
+12)SELECT `last_name` FROM employees WHERE `last_name` LIKE '%son';
+13)SELECT `first_name` FROM employees WHERE `first_name` LIKE '%o%';
+14)SELECT `first_name` FROM employees WHERE CHAR_LENGTH(`first_name`) = 5;
+15)SELECT `first_name`,`city` FROM employees WHERE `city` IS NULL;
+16)SELECT `first_name`,`city` FROM employees WHERE `city` IS NOT NULL;
+17)SELECT `first_name`,`department`,`salary` FROM employees WHERE `department` = 'HR' AND `salary` > 45000 OR `department` = 'Legal' AND `salary` > 45000;
+18)SELECT `last_name`,`salary` FROM employees WHERE `last_name` LIKE ("Mc%") AND `salary` < 70000;
+19)SELECT `last_name`,`hire_date` FROM employees WHERE `hire_date` LIKE"2022%";
+20)SELECT `department` FROM employees WHERE `department` LIKE"%Marketing%";
+БЛОK 3
+21)SELECT * FROM employees ORDER BY `first_name` ASC;
+22)SELECT * FROM employees ORDER BY `salary` DESC;
+23)SELECT * FROM employees ORDER BY `salary` DESC LIMIT 5;
+24)SELECT * FROM employees ORDER BY `hire_date` DESC LIMIT 2,2;
+25)SELECT * FROM employees ORDER BY `hire_date` DESC LIMIT 10;
+26)SELECT * FROM employees ORDER BY `department`,`salary`;
+27)SELECT * FROM employees ORDER BY `age` LIMIT 1;
+28)SELECT * FROM employees ORDER BY LENGTH (`first_name`);
+29)SELECT * FROM employees ORDER BY `salary` LIMIT 10;
+30)SELECT * FROM employees WHERE `department` = 'Sales' ORDER BY `hire_date`;
+БЛОК 4
+31)SELECT COUNT(*) FROM employees;
+32)SELECT AVG(`salary`)FROM employees;
+33)SELECT SUM(`salary`)FROM employees;
+34)SELECT MAX(`salary`)FROM employees;
+35)SELECT MIN(`age`)FROM employees;
+36)SELECT COUNT(*) FROM employees WHERE `city` = 'Berlin';
+37)SELECT AVG(`salary`) FROM employees WHERE `department` = 'IT';
+38)SELECT COUNT(*) FROM employees WHERE `salary` > (SELECT AVG(`salary`) FROM employees);
+39)SELECT `age`,`hire_date` FROM employees ORDER BY `hire_date` LIMIT 1;
+40)SELECT SUM(`salary`) FROM employees WHERE `first_name` LIKE'J%';
+БЛОК 5
+41)SELECT `department`, COUNT(*) FROM employees GROUP BY `department`;
+42)SELECT `city`, AVG(`salary`)FROM employees GROUP BY `city`;
+43)SELECT `department`, MAX(`salary`) FROM employees GROUP BY `department`;
+44)SELECT `department`, COUNT(*) FROM employees GROUP BY `department` HAVING COUNT(*) > 5;
+45)SELECT `city`, AVG(`salary`)FROM employees GROUP BY `city`HAVING AVG(`salary`) > 50000;
+46)SELECT YEAR(`hire_date`) FROM employees GROUP BY YEAR(`hire_date`);
+47)SELECT `city`, AVG(`salary`)FROM employees GROUP BY `salary` > 1000000;
+48)SELECT `department`, AVG(`age`) FROM employees GROUP BY `department` HAVING AVG(`age`);
+49)SELECT `department`, AVG(`salary`)FROM employees GROUP BY `department`HAVING AVG(`salary`) > 20000;
+50)SELECT `age`, COUNT(*) AS amount FROM `employees` GROUP BY `age`;
+БЛОК 6
+51)SELECT AVG(`salary`),`department` FROM employees GROUP BY `department`;
+SELECT `first_name`,`last_name`,`department`,`salary` FROM employees em1 WHERE em1.`salary` >( SELECT AVG(em2.`salary`) FROM employees em2 WHERE em2.`department` = em1.`department` );
+WITH new_employes AS( SELECT `department`, AVG(`salary`) FROM employees GROUP BY department ) SELECT * FROM new_employes;
+52)
