@@ -1,0 +1,13 @@
+SELECT
+		(SELECT name FROM `Price` WHERE price_id = Price.id) as 'Изделие',
+        (SELECT name FROM `Ingridiends` WHERE `ingridiends_id` = Ingridiends.id) as 'название ингридиента',
+        (SELECT name FROM `Ingridiends` WHERE `ingridiends_id` = Ingridiends.id) as 'Стоимость ингридиента',
+        `count` as 'колличество',
+        ((SELECT price FROM `Ingridiends` WHERE `ingridiends_id` = Ingridiends.id) * count) as 'Сумма'
+FROM Ingridiends_price
+WHERE (SELECT name FROM `Price` WHERE price_id = Price.id) = '1';
+SELECT
+SUM(
+ ((SELECT price FROM `Ingridiends` WHERE `ingridiends_id` = Ingridiends.id) * count)) as 'Сумма'
+FROM Ingridiends_price
+WHERE (SELECT name FROM `Price` WHERE price_id = Price.id) = '1';

@@ -1,0 +1,3 @@
+SELECT `number_of`,`model`,`prime_cost_id`,`norma` * (SELECT `number_of` * `norma`)as"норма расхода" FROM customer_order
+JOIN curves ON customer_order.curves_id = curves.id
+WHERE `model` = 'Куртка зимняя';
