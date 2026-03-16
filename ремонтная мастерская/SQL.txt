@@ -1,0 +1,6 @@
+-- SELECT `name`,`kol-vo`,`price`,`device` *(SELECT `kol-vo` * `price`) as "расход запчасти"FROM warehouse
+-- JOIN warehouse ON repair_orders.id = warehouse.id
+SELECT
+	(SELECT `kol-vo` * `price`) as'стоимость всех запасных частей и материалов',
+	(SELECT `malfunction` * `price`) as 'стоимость работ по ремонту'
+FROM warehouse, repair_orders;
