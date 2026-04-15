@@ -1,0 +1,324 @@
+=================Conect============
+from peewee import *
+#импорт библиотеки peewee
+
+# Первый способ
+mysql_db = MySQLDatabase('MagoA42_HelpDesk',
+                         user='MagoA42_HelpDesk',
+                         password='111111',
+                         host='10.11.13.118',
+                         port=3306)
+
+================контроллеры=======================
+    @classmethod
+    def get(cls):
+        '''
+        Вывод списка пользователей из таблицы User
+        :return:
+            список пользователей (объект)
+        '''
+        return Task.select()
+-----------------------------добавления --------------------------------------
+    @classmethod
+    # создание работы
+    def task_add(cls, topic, description, path, priority, status):
+        Task.create(
+            topic=topic,
+            description=description,
+            path=path,
+            priority=priority,
+            status=status
+        )
+------------------==-----повтор добавления 2 вариант-----------==----------------------
+    @classmethod
+    def add(cls,title,content,author,created_date,views):
+        # создание или добавление
+        Post.create(
+            title=title,
+            content=content,
+            author=author,
+            created_date=created_date,
+            views =views
+        )
+
+----------------------delet---------------------------------
+    @classmethod
+    def delite(cls, id):
+
+    # удаление
+       Task.delete_by_id(id)
+-----------------------редактирование------------------------------------
+ @classmethod
+    def post_update(cls, id, price):
+        # редактировать
+        Post.update({Post.content: price}).where(Post.id == id).execute()
+------------------------------------------------------------------
+@classmethod
+    #показать всех
+    def get(cls):
+        #показать всех
+        return Post.select()
+----------------------------------------------------------------
+
+=====================БД В МОДЕЛЯХ=================================
+from Connection.Connect import *
+
+class BaseModel(Model):
+    class Meta:
+        # database = mysql_db
+        database = connect()
+=========================ОТПРАВКА ВСЕХ ТАБЛИЦ ИЗ ФАЙЛОВ В МОДЕЛЯХ CREATE_TABLE=======================================
+from tkinter.constants import CASCADE
+
+from Model.Base import *
+from Model.Category import Category
+from Model.User import User
+from Model.Task import Task
+
+connect().create_tables(
+    [
+        User,
+        Task,
+        Category
+    ]
+)
+user_id = ForeignKeyField(model=User, on_delete=CASCADE, on_update=CASCADE)
+========================ТАБЛИЦА USER=====================================
+from Model.Base import *
+
+
+class User(BaseModel):
+    id = PrimaryKeyField()
+    login = CharField(unique=True, max_length=20)
+    password = CharField(max_length=255)
+    role = CharField(choices=[
+        'Пользователь',
+        'Администратор',
+        'Специалист'
+    ])
+    is_active = BooleanField(default=True)  # Альтернатива удаления
+    fullname = CharField(null=True, max_length=150)
+============================ТАБЛИЦА TASK=============================================
+from Model.Base import *
+from Model.User import *
+from Model.Category import *
+class Task(BaseModel):
+    id = PrimaryKeyField()
+    topic = CharField(max_length=100)
+    description = TextField()
+    path = CharField(max_length=255)# путь к файлу в папке на сервере
+    priority = CharField(
+        choices=[
+            'Низкий',
+            'Средний',
+            'Высокий',
+        ]
+    )
+    status = CharField(
+        choices=[
+            'Новая',
+            'В работе',
+            'Выполнено',
+        ]
+    )
+    user_id = ForeignKeyField(model=User)
+    speciality_id = ForeignKeyField(model=User)
+    category_id = ForeignKeyField(model=Category)
+==========================view================================================
+class PostView(Tk):
+    def __init__(self):
+        super().__init__()
+
+        # Атрибуты окна
+        self.title("Блог с постами")
+        self.geometry("1280x800")
+        # Фрейм добавление пользователя
+        self.add_frame = ttk.Frame(self,
+                                   borderwidth=1,  # ширина границы фрейма
+                                   padding=[18],  # внутренние отступы фрейма
+                                   )
+        self.add_frame.pack(
+            anchor=CENTER,  # расположение по центру
+            fill=X,  # заполнение
+            padx=10,  # расположение по оси x от верней левой точки окна
+            pady=10,  # расположение по оси y от верней левой точки окна
+
+        )
+------------------------------------Фрайм -------------------------------------
+ # Фрайм в которм расположен текст Добавить Пользователя (находится внутри фрейма add_frame)
+        self.add_title_frame = ttk.Frame(self.add_frame,
+                                         borderwidth=1,  # ширина границы фрейма
+                                         padding=[8, 10])
+        self.add_title_frame.pack(anchor=CENTER,  # расположение по центру
+                                  fill=X,  # заполнение
+                                  padx=10,  # расположение по оси x от верней левой точки окна
+                                  pady=10,  # расположение по оси y от верней левой точки окна
+                                  )
+        self.add_title = ttk.Label(self.add_title_frame, text="Добавить блог с постами")
+        self.add_title.pack()
+        # Фрайм в которм расположены окна ввода данных о Пользователе (находится внутри фрейма add_frame)
+        self.add_input_frame = ttk.Frame(self.add_frame,
+                                         borderwidth=1,  # ширина границы фрейма
+                                         padding=[8, 10]
+                                         )
+        self.add_input_frame.pack(anchor=CENTER
+                                  )
+----------------------------------------------------------------------------
+ # Окна ввода данных предмета для добавленпия в таблицу БД
+        self.add_title_title = ttk.Label(self.add_input_frame, text="заголовок")
+        self.add_title_title.grid(row=0, column=0, sticky="nsew", padx=5, pady=5)
+        self.add_title_content = ttk.Label(self.add_input_frame, text="содержание")
+        self.add_title_content.grid(row=0, column=1, sticky="nsew", padx=5, pady=5)
+        self.add_title_author = ttk.Label(self.add_input_frame, text="автор")
+        self.add_title_author.grid(row=0, column=2, sticky="nsew", padx=5, pady=5)
+        self.add_title_created_date = ttk.Label(self.add_input_frame, text="дата создания")
+        self.add_title_created_date.grid(row=0, column=3, sticky="nsew", padx=5, pady=5)
+        self.add_title_views = ttk.Label(self.add_input_frame, text=" количество просмотров")
+        self.add_title_views.grid(row=0, column=4, sticky="nsew", padx=5, pady=5)
+
+        self.add_title = ttk.Entry(self.add_input_frame)
+        self.add_title.grid(row=1, column=0, sticky="nsew", padx=5, pady=5)
+        self.add_content = ttk.Entry(self.add_input_frame)
+        self.add_content.grid(row=1, column=1, sticky="nsew", padx=5, pady=5)
+        self.add_author = ttk.Entry(self.add_input_frame)
+        self.add_author.grid(row=1, column=2, sticky="nsew", padx=5, pady=5)
+        self.add_created_date = ttk.Entry(self.add_input_frame)
+        self.add_created_date.grid(row=1, column=3, sticky="nsew", padx=5, pady=5)
+        self.add_views = ttk.Entry(self.add_input_frame)
+        self.add_views.grid(row=1, column=4, sticky="nsew", padx=5, pady=5)
+	#кнопка
+        self.add_button = ttk.Button(self.add_input_frame, text="Добавить",command=self.add_data)#command=self.add_data
+        self.add_button.grid(row=1, column=5, sticky="nsew", padx=5, pady=5)
+        # Фрейм Вывод предметов
+        self.get_data = ttk.Frame(
+            self,
+            borderwidth=3,
+            padding=[5]
+        )
+        self.get_data.pack(
+            anchor=CENTER
+        )
+        # Таблица
+        self.columns = ('id', "title", 'content', 'author', 'created_date','views')  # Столбцы
+        self.table_data = ttk.Treeview(self.get_data, columns=self.columns, show='headings')
+        # Заголовки
+        self.table_data.heading('id', text="№")
+        self.table_data.heading('title', text='заголовок')
+        self.table_data.heading('content', text='содержание')
+        self.table_data.heading('author', text='автор')
+        self.table_data.heading('created_date', text='дата создания')
+        self.table_data.heading('views', text=' количество просмотров')
+        # для события выбора из таблицы вызовем метод row_selected
+        self.table_data.bind("<<TreeviewSelect>>", self.select)
+        # Превращает объекты из БД в список кортежей для таблицы
+        self.table()
+
+        # Фрейм для окна поиска
+        self.search_frame = ttk.Frame(
+            self,
+            borderwidth=1,
+            padding=[8, 10]
+        )
+        self.search_frame.pack(
+            anchor=CENTER
+        )
+        # self.label_search = ttk.Label(self.search_frame, text="Найти пользователя по email")
+        # self.label_search.grid(row=0)
+        # self.text_search = Text(self.search_frame, height=5, width=50)
+        # self.text_search.grid(row=1, column=0)
+        # self.button_search = ttk.Button(self.search_frame, text="показать популярные", command=self.views_pokaz)
+        # self.button_search.grid(row=1, column=2, padx=5, sticky="s")
+
+        # кнопка удаления пользователя
+        self.button_delete = ttk.Button(self.search_frame, text='Удалить',command=self.but_delete)#command=self.but_delete
+        self.button_delete.grid(row=1, column=4, padx=5, sticky="s")
+
+    def select(self,event):
+        self.selected = self.table_data.item(self.table_data.focus(), "values")
+    #метод удаления
+    def but_delete(self):
+        result = askyesno( message="удалить запись")
+        if result:
+            if self.selected:
+                    PostController.delite(self.selected[0])
+                    self.table()
+            showinfo("Результат", "запись удалена")
+        else:
+            showinfo("Результат", "Операция отменена")
+
+
+        print(self.selected)
+
+
+        # метод передачи значения из строки ввода text_search в окно SaerchView
+    # def search(self):
+    #     self.string = self.text_search.get("0.0", "end")  # передачи значения из строки ввода text_search
+    #     self.string = self.string.strip()
+    #     window = PostView(search_string=self.string)
+    #     self.destroy()
+
+   # Для обновления данных в таблице создал метод добавления записей из БД
+    def table(self):
+        # Очистить старые записи
+        for item in self.table_data.get_children():
+            self.table_data.delete(item)
+        self.elemnt = []
+        for el in PostController.get():
+            self.elemnt.append(
+                (el.id, el.title, el.content, el.author, el.created_date, el.views)
+            )
+
+        # Вывод данных из БД в таблицу
+        for item in self.elemnt:
+            self.table_data.insert("", END, values=item)
+        self.table_data.pack()
+
+        # Методы для кнопок
+    def add_data(self):
+        self.title = self.add_title.get()
+        self.content = self.add_content.get()
+        self.author = self.add_author.get()
+        self.created_date = self.add_created_date.get()
+        self.views = self.add_views.get()
+        PostController.add(
+            self.title,
+            self.content,
+            self.author,
+            self.created_date,
+            self.views,
+            )
+        # Обновить данные табли Treeview
+        self.table()
+        # Очистить поля ввода
+        self.clear()
+
+    def clear(self):
+        '''
+        Метод очистит окна Treeview
+
+        :return:
+        '''
+        self.add_title.delete(0, END)  # c 0-го идекса до конца
+        self.add_content.delete(0, END)  # c 0-го идекса до конца
+        self.add_author.delete(0, END)  # c 0-го идекса до конца
+        self.add_created_date.delete(0, END)  # c 0-го идекса до конца
+        self.add_views.delete(0, END)  # c 0-го идекса до конца
+
+
+if __name__ == "__main__":
+    window = PostView()
+    window.mainloop()
+---------------------------во 2 окне------------------------------------------
+# кнопка закрытия окна или перехода в главное
+        self.button_clouse = ttk.Button(self, text="Вернутся на главную страницу", command=self.destroy)
+        self.button_clouse.pack(
+            anchor=CENTER,
+        )
+        # переход на главную окно
+        self.button_move = ttk.Button(self, text="Вернутся на главную страницу(2)", command=self.move)
+        self.button_move.pack(anchor=CENTER)
+
+    def move(self):
+        from Views.PostView import PostView
+        window_home = PostView()
+        self.destroy()
